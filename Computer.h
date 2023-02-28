@@ -7,8 +7,8 @@ class Computer : public Player{
     private:
         std::string name;
     public:
-        virtual char MakeMove();
-        virtual std::string getName();
+        char MakeMove();
+        std::string getName();
         Computer();
 
 };

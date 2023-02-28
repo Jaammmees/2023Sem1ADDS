@@ -11,8 +11,7 @@ class Human : public Player{
     public:
         Human(std::string n);
         Human();
-        virtual char MakeMove();
-        virtual std::string getName();
+        std::string getName();
 
 };
 

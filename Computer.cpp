@@ -11,5 +11,5 @@ Computer::Computer(){
 }
 
 string Computer::getName(){
-    return "Computer";
+    return name;
 }
