@@ -2,7 +2,7 @@
 
 using namespace std;
 
-char Computer::MakeMove(){
+char Computer::makeMove(){
     return 'R';
 }
 

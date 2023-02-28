@@ -2,7 +2,7 @@
 #include "iostream"
 using namespace std;
 
-char Player::MakeMove(){
+char Player::makeMove(){
     char move;
     cout << "Enter move: ";
     cin >> move;
