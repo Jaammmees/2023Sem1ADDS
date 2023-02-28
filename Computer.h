@@ -4,11 +4,11 @@
 #include "Player.h"
 
 class Computer : public Player{
+    private:
+        std::string name;
     public:
-        string name;
-        char move;
-        char MakeMove();
-        string getName();
+        virtual char MakeMove();
+        virtual std::string getName();
         Computer();
 
 };

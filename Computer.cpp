@@ -1,8 +1,9 @@
 #include "Computer.h"
 
+using namespace std;
+
 char Computer::MakeMove(){
-    move = 'R';
-    return move;
+    return 'R';
 }
 
 Computer::Computer(){

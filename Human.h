@@ -3,14 +3,16 @@
 
 #include "Player.h"
 
+
 class Human : public Player{
-    public:
+    private:
+        std::string name;
         char move;
-        string name;
-        Human(string n);
+    public:
+        Human(std::string n);
         Human();
         virtual char MakeMove();
-        virtual string getName();
+        virtual std::string getName();
 
 };
 

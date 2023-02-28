@@ -18,9 +18,5 @@ int main() {
         cout << winner->getName() << " Wins" << endl;
     }
 
-    delete human;
-    delete computer;
-    delete referee;
-
     return 0;
 }
