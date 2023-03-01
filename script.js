@@ -17,7 +17,7 @@ function start(){
     document.getElementById('start').style.display = "none";
     document.getElementById('reset').style.display = "block";
 
-    seconds = 59;
+    seconds = 15;
 
     let workMinutes = workTime - 1
     let breakMinutes = breakTime - 1
@@ -26,9 +26,10 @@ function start(){
 
     let timerFunction = () => {
         document.getElementById('minutes').innerHTML = workMinutes;
-        document.getElementById('seconds').innerHTML = seconds;   
+        document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
         
         seconds = seconds - 1;
+
 
         if(seconds == 0){
             workMinutes = workMinutes -1;
