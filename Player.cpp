@@ -2,10 +2,10 @@
 #include "iostream"
 using namespace std;
 
-char Player::makeMove(){
-    char move;
+Move* Player::makeMove(){
+    string move;
     cout << "Enter move: ";
     cin >> move;
-    return move;
+    return new Move(move);
 }
 

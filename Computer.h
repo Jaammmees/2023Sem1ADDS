@@ -7,7 +7,7 @@ class Computer : public Player{
     private:
         std::string name;
     public:
-        char makeMove();
+        Move* makeMove();
         std::string getName();
         Computer();
 

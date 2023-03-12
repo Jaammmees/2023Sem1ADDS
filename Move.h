@@ -4,8 +4,12 @@
 #include <string>
 
 class Move {
+private:
+    std::string move;
 public:
-    virtual std::string getName() = 0;
+    Move(std::string name);
+    virtual std::string getName();
+    bool compare(Move *otherMove);
 };
 
 #endif
