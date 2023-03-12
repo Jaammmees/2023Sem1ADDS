@@ -21,19 +21,19 @@ bool Move::compare(Move* otherMove) {
         return (otherName == "Paper");
     }
     else if (move == "Monkey") {
-        return (otherName == "Robot");
+        return (otherName == "Robot" || otherName == "Ninja");
     }
     else if (move == "Robot") {
-        return (otherName == "Monkey" || otherName == "Pirate");
+        return (otherName == "Ninja" || otherName == "Zombie");
     }
     else if (move == "Pirate") {
-        return (otherName == "Robot" || otherName == "Zombie");
+        return (otherName == "Robot" || otherName == "Monkey");
     }
     else if (move == "Ninja") {
         return (otherName == "Pirate" || otherName == "Zombie");
     }
     else if (move == "Zombie") {
-        return (otherName == "Monkey" || otherName == "Ninja");
+        return (otherName == "Pirate" || otherName == "Monkey");
     }
 
     return false;
