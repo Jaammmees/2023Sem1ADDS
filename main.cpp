@@ -13,9 +13,9 @@ int main() {
     Player* winner = referee->refGame(human, computer);
 
     if (winner == nullptr) {
-        cout << "It's a Tie" << endl;
+        cout << "Tie" << endl;
     } else {
-        cout << winner->getName() << " Wins" << endl;
+        cout << winner->getName() << endl;
     }
 
     return 0;
